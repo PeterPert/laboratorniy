@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿//дз 1, задача 1
+#include <iostream>
 using namespace std;
 int main() {
 	int a;
