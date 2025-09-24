@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     int a = 0;//количество гласных
-    string v = "aeiouAEIOUаеёиоуыэюяАЕЁИОУЫЭЮЯ";
+    string v = "aeiouAEIOU";
     char c;
 
     setlocale(LC_ALL, "");
