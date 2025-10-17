@@ -5,6 +5,6 @@ PORT=12345
 echo "Клиент запущен. Подключение к $SERVER:$PORT"
 while true; do
     read -p "Сообщение: " message
-    echo "$message" | nc -w 3 "$SERVER" "$PORT"
+    echo "$message" | nc -w "$SERVER" "$PORT"
     echo "Сообщение отправлено"
 done
