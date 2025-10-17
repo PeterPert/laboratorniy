@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <cstring>
 #include <sstream>
 #include <cctype> // to lower
@@ -85,10 +85,7 @@ int main() {
     }
 
     string shortest_common = "";
-    string word1_result = "", word2_result = "";
     int min_length = 999; // Большое число
-
-    // Перебираем все пары слов
     for (int i = 0; i < words.size(); i++) {
         for (int j = i + 1; j < words.size(); j++) {
             string word1 = words[i];
@@ -109,7 +106,7 @@ int main() {
 
     // Вывод результатов
     if (!shortest_common.empty()) {
-        cout << "Самая короткая общая подстрока: \"" << shortest_common << "\"" << endl;
+        //cout << "Самая короткая общая подстрока: \"" << shortest_common << "\"" << endl;
         cout << "Длина подстроки: " << shortest_common.length() << " символов" << endl;
     } else {
         cout << "Общих подстрок между словами не найдено" << endl;
