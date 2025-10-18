@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <algorithm> 
 using namespace std;
@@ -14,11 +14,10 @@ int main() {
     cout << endl;
     auto it = find(numb.begin(), numb.end(), 7);
     if (it != numb.end())
-        cout << "Элемент найден: " << *it << " на позиции " << (it - numb.begin()+1) << "\n"; //почему позиция 6, если это 7 элемент и почему нельзя вывести просто it?
+        cout << "Элемент найден: " << *it << " на позиции " << (it - numb.begin()); 
     else
-        cout << "Элемент не найден\n";
+        cout << "Элемент не найден";
     cout << endl;
-    
     sort(numb.begin(), numb.end());    
     numb.erase(unique(numb.begin(), numb.end()), numb.end());
 
