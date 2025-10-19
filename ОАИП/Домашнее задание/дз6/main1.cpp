@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <cstring>
 #include <sstream>
 #include <string>
@@ -6,16 +6,15 @@
 #include <cctype> // to lower
 using namespace std;
 int main() {
-    string mystr; // Чтение строки с клавиатуры 
+    string mystr; 
     cout << "Введите строку: ";
-    getline(cin, mystr); // Читаем всю строку
+    getline(cin, mystr); 
     
     string str1;
     str1 = mystr;
     reverse(str1.begin(), str1.end());
     bool tr = true;
     
-    // Удаляем пробелы и преобразуем к нижнему регистру
     mystr.erase(remove(mystr.begin(), mystr.end(), ' '), mystr.end());
     str1.erase(remove(str1.begin(), str1.end(), ' '), str1.end());
     transform(mystr.begin(), mystr.end(), mystr.begin(), ::tolower);
