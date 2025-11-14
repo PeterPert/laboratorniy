@@ -1,0 +1,4 @@
+--запрос 1
+SELECT id, name, price
+FROM products
+ORDER BY name;

@@ -1,0 +1,8 @@
+apple 1 1
+apple 1 1
+banana 1 1
+banana 1 1
+grape 20 34
+gur 3 65
+nana 1 1
+red 1 1
