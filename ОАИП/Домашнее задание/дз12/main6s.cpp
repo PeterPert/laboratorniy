@@ -42,10 +42,10 @@ struct Library {
     
     void displayAll() {
         if (books.empty()) {
-            cout << "Библиотека пуста.\n";
+            cout << "Библиотека пуста." << endl;
             return;
         }
-        cout << "\nСписок всех книг в библиотеке:\n";
+        cout << "Список всех книг в библиотеке:" << endl;
         for (int i = 0; i < books.size(); i++) {
             cout << i + 1 << ". " << books[i].title 
                  << " (Автор: " << books[i].author 
@@ -61,11 +61,11 @@ int main() {
     int choice;
     do {
         cout << "\n=== Меню ===\n";
-        cout << "1. Добавить книгу\n";
-        cout << "2. Удалить книгу по названию\n";
-        cout << "3. Найти книги по автору\n";
-        cout << "4. Показать все книги\n";
-        cout << "5. Выйти\n";
+        cout << "1. Добавить книгу" << endl;
+        cout << "2. Удалить книгу по названию" << endl;
+        cout << "3. Найти книги по автору" << endl;
+        cout << "4. Показать все книги" << endl;
+        cout << "5. Выйти" << endl;
         cout << "Выберите действие: ";
         cin >> choice;
         cin.ignore();
@@ -91,9 +91,9 @@ int main() {
                 cout << "Введите название книги для удаления: ";
                 getline(cin, title);
                 if (library.removeBook(title)) {
-                    cout << "Книга удалена.\n";
+                    cout << "Книга удалена." << endl;
                 } else {
-                    cout << "Книга не найдена.\n";
+                    cout << "Книга не найдена." << endl;
                 }
                 break;
             }
@@ -104,13 +104,13 @@ int main() {
                 getline(cin, author);
                 vector<Book> found = library.searchByAuthor(author);
                 if (found.empty()) {
-                    cout << "Книги автора \"" << author << "\" не найдены.\n";
+                    cout << "Книги автора \"" << author << "\" не найдены." << endl;
                 } else {
-                    cout << "Найдено книг: " << found.size() << "\n";
+                    cout << "Найдено книг: " << found.size() << endl;
                     for (const auto& book : found) {
                         cout << "- " << book.title 
                              << " (Год: " << book.year 
-                             << ", Жанр: " << book.genre << ")\n";
+                             << ", Жанр: " << book.genre << ")" << endl;
                     }
                 }
                 break;
@@ -121,11 +121,11 @@ int main() {
                 break;
                 
             case 5:
-                cout << "Выход из программы.\n";
+                cout << "Выход из программы." << endl;
                 break;
                 
             default:
-                cout << "Неверный выбор.\n";
+                cout << "Неверный выбор." << endl;
                 break;
         }  
     } while (choice != 5);
