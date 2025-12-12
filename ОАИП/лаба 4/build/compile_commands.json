@@ -1,0 +1,50 @@
+[
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\main.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\main.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/main.cpp",
+  "output": "CMakeFiles/library_manager.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\src\\Database.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\src\\Database.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/src/Database.cpp",
+  "output": "CMakeFiles/library_manager.dir/src/Database.cpp.obj"
+},
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\src\\Logger.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\src\\Logger.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/src/Logger.cpp",
+  "output": "CMakeFiles/library_manager.dir/src/Logger.cpp.obj"
+},
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\src\\Author.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\src\\Author.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/src/Author.cpp",
+  "output": "CMakeFiles/library_manager.dir/src/Author.cpp.obj"
+},
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\src\\Book.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\src\\Book.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/src/Book.cpp",
+  "output": "CMakeFiles/library_manager.dir/src/Book.cpp.obj"
+},
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\src\\User.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\src\\User.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/src/User.cpp",
+  "output": "CMakeFiles/library_manager.dir/src/User.cpp.obj"
+},
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\src\\BorrowedBook.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\src\\BorrowedBook.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/src/BorrowedBook.cpp",
+  "output": "CMakeFiles/library_manager.dir/src/BorrowedBook.cpp.obj"
+},
+{
+  "directory": "C:/Users/petrt/Downloads/Laba4/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/library_manager.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\library_manager.dir\\src\\LibraryManager.cpp.obj -c C:\\Users\\petrt\\Downloads\\Laba4\\src\\LibraryManager.cpp",
+  "file": "C:/Users/petrt/Downloads/Laba4/src/LibraryManager.cpp",
+  "output": "CMakeFiles/library_manager.dir/src/LibraryManager.cpp.obj"
+}
+]

@@ -1,0 +1,88 @@
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "build",
+//             "type": "shell",
+//             "command": "cmake",
+//             "args": [
+//                 "--build",
+//                 "build",
+//                 "--config",
+//                 "Release"
+//             ],
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "problemMatcher": [],
+//             "detail": "Build the project"
+//         },
+//         {
+//             "label": "configure",
+//             "type": "shell",
+//             "command": "cmake",
+//              "args": [
+//                  "-B",
+//                  "build",
+//                  "-G",
+//                 "MinGW Makefiles"
+//              ],
+//              "group": "build"
+//          }
+//     ]
+// }
+
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "build",
+//             "type": "shell",
+//             "command": "g++",
+//             "args": [
+//                 "-g",
+//                 "-o",
+//                 "${workspaceFolder}/build/main.exe",
+//                 "${workspaceFolder}/main.cpp",
+//                 "-IC:/msys64/mingw64/include",
+//                 "-LC:/msys64/mingw64/lib",
+//                 "-lpqxx",
+//                 "-lpq",
+//                 "-D_GLIBCXX_USE_C99"
+//             ],
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "problemMatcher": ["$gcc"]
+//         }
+//     ]
+// }
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cmake --build build --config Debug",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        },
+        {
+            "label": "configure",
+            "type": "shell",
+            "command": "cmake -B build -DCMAKE_BUILD_TYPE=Debug",
+            "group": "build"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rmdir /s /q build && mkdir build",
+            "group": "build"
+        }
+    ]
+}

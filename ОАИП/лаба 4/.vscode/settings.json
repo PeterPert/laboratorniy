@@ -1,0 +1,11 @@
+// {
+//     "cmake.sourceDirectory": "C:/Users/petrt/Downloads/Laba4"
+// }
+{
+    "cmake.configureSettings": {
+        "CMAKE_PREFIX_PATH": "C:/vcpkg/installed/x64-windows"
+    },
+    "files.associations": {
+        "*.h": "cpp"
+    }
+}

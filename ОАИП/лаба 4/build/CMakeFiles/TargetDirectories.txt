@@ -1,0 +1,3 @@
+C:/Users/petrt/Downloads/Laba4/build/CMakeFiles/library_manager.dir
+C:/Users/petrt/Downloads/Laba4/build/CMakeFiles/edit_cache.dir
+C:/Users/petrt/Downloads/Laba4/build/CMakeFiles/rebuild_cache.dir
