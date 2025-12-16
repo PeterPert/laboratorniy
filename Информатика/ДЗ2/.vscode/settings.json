@@ -1,0 +1,14 @@
+// {
+//     "cmake.sourceDirectory": "C:/Users/petrt/Downloads/Laba4"
+// }
+{
+    "code-runner.runInTerminal": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": true,
+    "code-runner.executorMap": {
+        "cpp": "cd /d \"$workspaceRoot\" && cmake --build build && .\\build\\dhw.exe"
+    },
+    "cmake.configureOnOpen": true,
+    "cmake.configureOnEdit": true,
+    "cmake.automaticReconfigure": true,
+}
