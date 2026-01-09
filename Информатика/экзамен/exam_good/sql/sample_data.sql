@@ -1,5 +1,3 @@
--- Файл sample_data.sql из вашего задания
--- Исправленная версия без конфликтов
 
 -- 1. Процедура изменения статуса (исправленная)
 CREATE OR REPLACE PROCEDURE updateOrderStatus(

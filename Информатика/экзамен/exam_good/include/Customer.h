@@ -1,32 +1,4 @@
-// #ifndef CUSTOMER_H
-// #define CUSTOMER_H
 
-// #include "User.h"
-// #include "PaymentStrategy.h"
-// #include <memory>
-
-// class Customer : public User {
-// private:
-//     int loyaltyLevel;
-    
-// public:
-//     Customer(int id, const std::string& name, const std::string& email, int loyaltyLevel);
-    
-//     void displayMenu() override;
-//     bool hasPermission(const std::string& action) const override;
-    
-//     // Специфичные методы покупателя
-//     void addToOrder(int orderId, int productId, int quantity);
-//     bool removeFromOrder(int orderId, int orderItemId);
-//     bool makePayment(int orderId, std::unique_ptr<PaymentStrategy> paymentStrategy);
-//     void viewMyOrders();
-//     void returnOrder(int orderId);
-//     void viewOrderStatusHistory(int orderId);
-    
-//     int getLoyaltyLevel() const { return loyaltyLevel; }
-// };
-
-// #endif // CUSTOMER_H
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
 
