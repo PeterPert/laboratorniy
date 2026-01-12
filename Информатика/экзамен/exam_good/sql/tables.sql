@@ -32,7 +32,7 @@ CREATE TABLE orders (
 
 -- 4. Таблица элементов заказов (order_items)
 CREATE TABLE order_items (
-    order_item_id INTEGER PRIMARY KEY,
+    order_item_id SERIAL PRIMARY KEY,
     order_id INTEGER NOT NULL,
     product_id INTEGER NOT NULL,
     quantity INTEGER NOT NULL,
@@ -44,10 +44,9 @@ CREATE TABLE order_items (
         FOREIGN KEY (product_id) 
         REFERENCES products(product_id)
 );
-
 -- 5. Таблица истории статусов заказов (order_status_history)
 CREATE TABLE order_status_history (
-    history_id INTEGER PRIMARY KEY,
+    history_id SERIAL PRIMARY KEY,
     order_id INTEGER NOT NULL,
     old_status VARCHAR(20),
     new_status VARCHAR(20) NOT NULL,
@@ -63,12 +62,12 @@ CREATE TABLE order_status_history (
 
 -- 6. Таблица логирования операций (audit_log)
 CREATE TABLE audit_log (
-    log_id INTEGER PRIMARY KEY,
+    log_id SERIAL PRIMARY KEY,  
     entity_type VARCHAR(20) NOT NULL CHECK (entity_type IN ('order', 'product', 'user')),
     entity_id INTEGER NOT NULL,
     operation VARCHAR(20) NOT NULL CHECK (operation IN ('insert', 'update', 'delete')),
     performed_by INTEGER NOT NULL,
-    performed_at TIMESTAMP NOT NULL,
+    performed_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_audit_user
         FOREIGN KEY (performed_by) 
         REFERENCES users(user_id)
